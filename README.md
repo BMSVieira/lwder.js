@@ -1,4 +1,4 @@
-<p align="center">
+<br><p align="center">
 <img width="250" src="https://github.com/BMSVieira/lwder.js/blob/main/demo/img/logo.png?raw=true">
 </p>
 
