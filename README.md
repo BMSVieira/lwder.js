@@ -20,7 +20,7 @@ https://bmsvieira.github.io/lwder.js/
 ```javascript
 <script src="path/to/lwder.js"></script>
 ```
-<b>2 - Set HTML.</b>
+<b>2 - Set HTML Elements.</b>
 ```html
 <div class="lwder" lwder="..." lwderspeed="300"> Page is loading </div>
 ```
