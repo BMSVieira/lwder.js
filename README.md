@@ -5,7 +5,7 @@
 ◼️ Features:
 -
 - 🛠 Easy to Use
-- 🌠 Fast & Lightweight
+- 🌠 Fast & Lightweight (0.5Kb)
 - 💪 No dependencies, built with VanillaJS
 - 🌎 Tested in all modern browsers
 
