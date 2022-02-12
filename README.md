@@ -1,7 +1,7 @@
-<br><p align="center">
+<p align="center">
 <img width="250" src="https://github.com/BMSVieira/lwder.js/blob/main/demo/img/logo.png?raw=true">
 </p>
- 
+
 ◼️ Features:
 -
 - 🛠 Easy to Use
@@ -11,7 +11,7 @@
 
 ◼️ Demo:
 -
-https://bmsvieira.github.io/letmescroll.js/
+https://bmsvieira.github.io/lwder.js/
 
 ◼️ Installation:
 -
