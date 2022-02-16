@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
@@ -34,6 +34,13 @@
             padding: 10px;
             font-weight: bold;
         }
+        .topic_lwder
+        {
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 23px;
+            border-radius: 4px;
+        }
 
         </style>
     </head>
@@ -53,45 +60,56 @@
             </div>
         </section>
         <section>
-            <div class="container">
+            <div class="container" style="min-height:700px;">
                 <div class="row">
                     <div class="col-lg-12">
 <pre style="background-color: #101924!important ; color: #fdff66!important; margin-bottom:30px;">
 new Lwder({ selector: ".lwder" });
 </pre>
                     </div>
+                    <div class="col-lg-12 topic_lwder">
+                        Default Events
+                    </div>
                     <div class="col-lg-3">
                         <pre>lwder="..." lwderspeed="300"</pre>
-                        <div style="padding:10px;" class="innerdiv lwder" lwder="..." lwderspeed="300">
-                            Page is loading
-                        </div>
+                        <div style="padding:10px;" class="innerdiv lwder" lwdertype="default" lwder="..." lwderspeed="300">Page is loading</div>
                     </div> 
                     <div class="col-lg-3">
                         <pre>lwder="." lwderspeed="400"</pre>
-                        <div style="padding:10px;" class="innerdiv lwder" lwder="." lwderspeed="400">
-                            Please Wait
-                        </div>
+                        <div style="padding:10px;" class="innerdiv lwder" lwdertype="default" lwder="." lwderspeed="400">Please Wait</div>
                     </div>
                     <div class="col-lg-3">
-                        <pre>lwder="❗" lwderspeed="400"</pre>
-                        <div style="padding:10px;" class="innerdiv lwder" lwder="❗" lwderspeed="400">
-                            Warning
-                        </div>
+                        <pre>lwder="⚠️" lwderspeed="400"</pre>
+                        <div style="padding:10px;" class="innerdiv lwder" lwdertype="default" lwder="⚠️" lwderspeed="400">Warning</div>
                     </div>
                     <div class="col-lg-3">
-                        <pre>lwder="⛔" lwderspeed="200"</pre>
-                        <div style="padding:10px;" class="innerdiv lwder" lwder="⛔" lwderspeed="200">
-                            STOP
-                        </div>
+                        <pre>lwder="🛑" lwderspeed="200"</pre>
+                        <div style="padding:10px;" class="innerdiv lwder" lwdertype="default" lwder="🛑" lwderspeed="200">STOP</div>
                     </div>
                     <div class="col-lg-6">
                         <pre>lwder="Loading..." lwderspeed="100"</pre>
-                        <div style="padding:10px;" class="innerdiv lwder" lwder="Loading..." lwderspeed="100"></div>
+                        <div style="padding:10px;" class="innerdiv lwder" lwdertype="default" lwder="Loading..." lwderspeed="100"></div>
                     </div> 
                     <div class="col-lg-6">
-                        <pre>lwder="⚪⚫⚪⚫⚪" lwderspeed="400"</pre>
-                        <div style="padding:10px;" class="innerdiv lwder" lwder="⚪⚫⚪⚫⚪" lwderspeed="400"></div>
+                        <pre>lwder="🔴🟠🟡🟢🔵🟣" lwderspeed="200"</pre>
+                        <div style="padding:10px;" class="innerdiv lwder" lwdertype="default" lwder="🔴🟠🟡🟢🔵🟣" lwderspeed="200"></div>
                     </div> 
+                    <div class="col-lg-12 topic_lwder">
+                        Onclick Events
+                    </div>
+                    <div class="col-lg-4">
+                        <pre>lwder="..." lwderspeed="200" lwderduration="3000" lwdertype="onclick" lwdercondition="clear"</pre>
+                        <a class="btn btn-sm btn-dark lwder" lwder="..." lwderspeed="200" lwderduration="3000" lwdertype="onclick" style="font-weight:bold; min-width:250px; width:100%;">Load Page</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <pre>lwder="🟥🟧🟨🟩🟦" lwderspeed="200" lwderduration="3000" lwdertype="onclick"</pre>
+                        <a class="btn btn-sm btn-dark lwder" lwder="🟥🟧🟨🟩🟦" lwderspeed="200" lwderduration="3000" lwdertype="onclick" lwdercondition="clear"  style="min-width:250px; width:100%;font-weight:bold;">Get Content</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <pre>lwder="✅" lwderspeed="300" lwderduration="3000" lwdertype="onclick"</pre>
+                        <a class="btn btn-sm btn-dark lwder" lwder="✅" lwderspeed="400" lwderduration="3000" lwdertype="onclick" style="min-width:250px; width:100%;font-weight:bold; ">Refresh </a>
+                    </div>
+
 
                 </div>
             </div>
@@ -100,12 +118,8 @@ new Lwder({ selector: ".lwder" });
         <script>
         var demo1;
         document.addEventListener("DOMContentLoaded", function() {
-
             new Lwder({ selector: ".lwder" });
-
         });
-
-   
         </script>
     </body>
 </html>
