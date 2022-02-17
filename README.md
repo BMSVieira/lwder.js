@@ -31,3 +31,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
+◼️ Options
+-
+ 
+| Name | Value | Default | Description
+| --- | --- | --- | --- |
+| `lwder` | `string` | empty | Content to be added |
+| `lwderspeed` | `int` | empty | Speed at which letters will appear |
+| `lwdertype` | `default` or `onclick`| `default` | Type of event, `default` (on init) or `onclick` |
+| `lwdercondition` | `default` or `clear` | `default` | Event condition, `default` (add to existing content) or `clear` (clear all existing content from element) |
+| `lwderduration` | `int` | empty | Duration of how long lwder will run if `lwdertype` is `onclick` |
